@@ -29,6 +29,7 @@ const NavGroup = styled.div`
 const LogoImage = styled.img`
   width: 87px;
   height: 60px;
+  margin-right: 32px;
 `;
 
 const NavButton = styled.button`
