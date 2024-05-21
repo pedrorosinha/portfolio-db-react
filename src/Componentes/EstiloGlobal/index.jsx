@@ -11,10 +11,8 @@ const EstiloGlobal = createGlobalStyle`
         src: url('/src/Componentes/EstiloGlobal/Fontes/supermolot-ttf/TT-Supermolot-Bold.ttf');
     }
 
-    @font-face {
-        font-family: 'Roboto-Flex';
-        src: url("/src/Componentes/EstiloGlobal/Fontes/roboto-ttf/robotoflex-Regular.ttf") format('ttf');
-    }
+    @import url('https://fonts.googleapis.com/css2?family=Roboto+Flex:opsz,wght@8..144,100..1000&display=swap');
+    
     body, html {
         margin: 0;
         padding: 0;

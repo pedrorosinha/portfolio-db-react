@@ -21,7 +21,7 @@ const MainSection = styled.div`
 `;
 
 const Title = styled.h1`
-  font-family: 'Roboto-Flex';
+  font-family: "Roboto Flex", sans-serif;
   font-size: 80px;
   font-weight: 700;
   color: #292929;
@@ -53,7 +53,7 @@ const SectionTitle = styled.h3`
   `;
 
 const Description = styled.p`
-    font-family: 'Roboto-Flex';
+    font-family: "Roboto Flex", sans-serif;
     font-size: 16px;
     font-weight: 300;
     color: #292929;
@@ -65,7 +65,8 @@ const Description = styled.p`
 const Image = styled.img`
   width: 567px;
   height: 292px;
-  margin-top: 50px;
+  top: 157px;
+  left: 757px;
 `;
 
 const Titulo = () => {
