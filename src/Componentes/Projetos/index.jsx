@@ -117,6 +117,24 @@ const Projetos = () => {
                     <Button>Acessar</Button>
                     </a>
                 </Card>
+                <Card>
+                    <CardImage style={{ backgroundImage: `url('src/Componentes/Projetos/Imagens/imagem-capa-apresentacao-spring-boot.png')` }} />
+                    <CardTitle>Apresentação sobre o Spring Boot</CardTitle>
+                    <CardSubtitle>JAVA, SPRING BOOT, MYSQL</CardSubtitle>
+                    <CardContent>Apresentação sobre o Spring Boot mostrando o que é, como instalar/configurar e mostrando um exemplo de um projeto</CardContent>
+                    <a href="https://drive.google.com/file/d/1QaCHQSTOOrbeUoHFznKKRRM56zGB1xf9/view?usp=sharing" target="_blank" rel="noopener noreferrer">
+                    <Button>Acessar</Button>
+                    </a>
+                </Card>
+                <Card>
+                    <CardImage style={{ backgroundImage: `url('src/Componentes/Projetos/Imagens/imagem-capa-apresentacao-react.png')` }} />
+                    <CardTitle>Apresentação sobre o React</CardTitle>
+                    <CardSubtitle>REACT, CSS, JAVASCRIPT</CardSubtitle>
+                    <CardContent>Apresentação sobre o React mostrando o que é, como instalar/configurar e fazendo um exemplo de um projeto de uma calculadora</CardContent>
+                    <a href="https://drive.google.com/file/d/1MWIX_3nVOFQjZnDqX1cJl40g39PM0LmV/view?usp=sharing" target="_blank" rel="noopener noreferrer">
+                    <Button>Acessar</Button>
+                    </a>
+                </Card>
             </Cards>
         </ProjetosContainer>
     );
