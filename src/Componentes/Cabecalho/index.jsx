@@ -83,11 +83,9 @@ const Cabecalho = () => {
           <NavButton to="/projetos">Projetos</NavButton>
         </NavGroup>
         <IconGroup>
-          <a href="mailto:pedro.rosinha@db.tec.br" target="_blank" rel="noopener noreferrer">
             <IconButton>
               <img src={EmailIcon} alt="Email" />
             </IconButton>
-          </a>
           <a href="https://github.com/pedrorosinha" target="_blank" rel="noopener noreferrer">
             <IconButton>
               <img src={GithubIcon} alt="Github" />
