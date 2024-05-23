@@ -9,15 +9,21 @@ const ProjetosContainer = styled.div`
 
 const Cards = styled.div`
   display: flex;
-  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 86px;
+  justify-content: flex-start;
   margin-top: 30px;
+  margin-left: 124px;
 `;
 
 const Card = styled.div`
   width: 306px;
+  flex: 0 1 calc(33.33% - 20px);
+  max-width: 306px;
   background-color: #f5f5f5ff;
   border-radius: 8px;
   padding: 16px;
+  margin-bottom: 20px;
   box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
 `;
 
@@ -87,7 +93,7 @@ const Projetos = () => {
                 <Card>
                     <CardImage style={{ backgroundImage: `url('src/Componentes/Projetos/Imagens/imagem-weather-app.png')` }} />
                     <CardTitle>Front-end Weather App</CardTitle>
-                    <CardSubtitle>React, CSS, JAVASCRIPT</CardSubtitle>
+                    <CardSubtitle>REACT, CSS, JAVASCRIPT</CardSubtitle>
                     <CardContent>Projeto de Front-end do desafio final da Formação Academia que o objetivo foi criar a tela para o cadastro da Previsão do Tempo.</CardContent>
                     <a href="https://front-end-weather-app.vercel.app/" target="_blank" rel="noopener noreferrer">
                     <Button>Acessar</Button>
@@ -99,6 +105,15 @@ const Projetos = () => {
                     <CardSubtitle>JAVA, SPRING BOOT, MYSQL</CardSubtitle>
                     <CardContent>Projeto de Back-end do desafio final da Formação Academia que o objetivo foi criar um Crud, acrônimo de Create, Read, Update e Delete sobre a previsão do tempo</CardContent>
                     <a href="https://github.com/pedrorosinha/back-end-weather-app" target="_blank" rel="noopener noreferrer">
+                    <Button>Acessar</Button>
+                    </a>
+                </Card>
+                <Card>
+                    <CardImage style={{ backgroundImage: `url('src/Componentes/Projetos/Imagens/imagem-crud-pessoa-endereco.png')` }} />
+                    <CardTitle>CRUD Pessoa e Endereço</CardTitle>
+                    <CardSubtitle>JAVA, SPRING BOOT, MYSQL</CardSubtitle>
+                    <CardContent>Primeiro projeto de Back-end na DB que o objetivo foi criar um Crud, acrônimo de Create, Read, Update e Delete relacionando a pessoa com o endereço.</CardContent>
+                    <a href="https://github.com/pedrorosinha/crud-java-spring-boot-pessoa-endereco" target="_blank" rel="noopener noreferrer">
                     <Button>Acessar</Button>
                     </a>
                 </Card>
