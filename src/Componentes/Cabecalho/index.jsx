@@ -1,4 +1,6 @@
-import styled from "styled-components";
+import React from 'react';
+import { Link } from 'react-router-dom';
+import styled from 'styled-components';
 import logo from '/src/assets/logo-db.svg';
 import EmailIcon from '/src/assets/Icones/icone-email.svg';
 import GithubIcon from '/src/assets/Icones/icone-github.svg';
@@ -32,7 +34,7 @@ const LogoImage = styled.img`
   margin-right: 32px;
 `;
 
-const NavButton = styled.button`
+const NavButton = styled(Link)`
   background: none;
   border: none;
   font-family: 'TTSupermolot-Bold';
@@ -41,6 +43,19 @@ const NavButton = styled.button`
   color: #201f53;
   margin: 0 16px;
   cursor: pointer;
+  text-decoration: none;
+
+  &:hover {
+    &:after {
+      content: '';
+      position: absolute;
+      left: 0;
+      bottom: -2px;
+      width: 100%;
+      height: 2px;
+      background-color: #201f53;
+    }
+  }
 `;
 
 const IconGroup = styled.div`
@@ -57,37 +72,35 @@ const IconButton = styled.button`
 
 const Cabecalho = () => {
   return (
-    <>
-      <Container>
-        <Navbar>
-          <NavGroup>
-            <a href="https://db.tec.br/" target="_blank" rel="noopener noreferrer">
+    <Container>
+      <Navbar>
+        <NavGroup>
+          <a href="https://db.tec.br/" target="_blank" rel="noopener noreferrer">
             <LogoImage src={logo} />
-            </a>
-            <NavButton>Sobre</NavButton>
-            <NavButton>Currículo</NavButton>
-            <NavButton>Projetos</NavButton>
-          </NavGroup>
-          <IconGroup>
-            <a href="mailto:pedro.rosinha@db.tec.br" target="_blank" rel="noopener noreferrer">
+          </a>
+          <NavButton to="/">Sobre</NavButton>
+          <NavButton to="/">Currículo</NavButton>
+          <NavButton to="/projetos">Projetos</NavButton>
+        </NavGroup>
+        <IconGroup>
+          <a href="mailto:pedro.rosinha@db.tec.br" target="_blank" rel="noopener noreferrer">
             <IconButton>
               <img src={EmailIcon} alt="Email" />
             </IconButton>
-            </a>
-            <a href="https://github.com/pedrorosinha" target="_blank" rel="noopener noreferrer">
+          </a>
+          <a href="https://github.com/pedrorosinha" target="_blank" rel="noopener noreferrer">
             <IconButton>
               <img src={GithubIcon} alt="Github" />
             </IconButton>
-            </a>
-            <a href="https://www.linkedin.com/in/pedro-felipe-paulino-rosinha-792388228/" target="_blank" rel="noopener noreferrer">
+          </a>
+          <a href="https://www.linkedin.com/in/pedro-felipe-paulino-rosinha-792388228/" target="_blank" rel="noopener noreferrer">
             <IconButton>
               <img src={LinkedinIcon} alt="Linkedin"/>
             </IconButton>
-            </a>
-          </IconGroup>
-        </Navbar>
-      </Container>
-    </>
+          </a>
+        </IconGroup>
+      </Navbar>
+    </Container>
   );
 }
 
