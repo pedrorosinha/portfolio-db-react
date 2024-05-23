@@ -79,24 +79,28 @@ const Projetos = () => {
                     <CardImage style={{ backgroundImage: `url('src/Componentes/Projetos/Imagens/imagem-calculadora.png')` }} />
                     <CardTitle>Calculadora</CardTitle>
                     <CardSubtitle>REACT, CSS, JAVASCRIPT</CardSubtitle>
-                    <CardContent>Um projeto de React com JavaScript realizado durante a minha apresentação sobre o React</CardContent>
-                    <a href="https://github.com/pedrorosinha/calculadora-react" target="_blank" rel="noopener noreferrer">
+                    <CardContent>Um projeto de React com JavaScript realizado durante a minha apresentação sobre o React.</CardContent>
+                    <a href="https://calculadora-react-nine-dusky.vercel.app/" target="_blank" rel="noopener noreferrer">
                     <Button>Acessar</Button>
                     </a>
                 </Card>
                 <Card>
-                    <CardImage style={{ backgroundImage: `url('path_to_image_2')` }} />
-                    <CardTitle>Blog responsivo</CardTitle>
-                    <CardSubtitle>HTML, CSS, NODE</CardSubtitle>
-                    <CardContent>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed diam urna, euismod at porttitor in, dignissim eu mauris. In sem nibh, viverra eu risus sed, accumsan luctus dui. Fusce ex neque, maximus quis dui et, rutrum sollicitudin sem.</CardContent>
+                    <CardImage style={{ backgroundImage: `url('src/Componentes/Projetos/Imagens/imagem-weather-app.png')` }} />
+                    <CardTitle>Front-end Weather App</CardTitle>
+                    <CardSubtitle>React, CSS, JAVASCRIPT</CardSubtitle>
+                    <CardContent>Projeto de Front-end do desafio final da Formação Academia que o objetivo foi criar a tela para o cadastro da Previsão do Tempo.</CardContent>
+                    <a href="https://front-end-weather-app.vercel.app/" target="_blank" rel="noopener noreferrer">
                     <Button>Acessar</Button>
+                    </a>
                 </Card>
                 <Card>
-                    <CardImage style={{ backgroundImage: `url('path_to_image_3')` }} />
-                    <CardTitle>Mobile</CardTitle>
-                    <CardSubtitle>Android studio, Kotlin</CardSubtitle>
-                    <CardContent>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed diam urna, euismod at porttitor in, dignissim eu mauris. In sem nibh, viverra eu risus sed, accumsan luctus dui. Fusce ex neque, maximus quis dui et, rutrum sollicitudin sem.</CardContent>
+                    <CardImage style={{ backgroundImage: `url('src/Componentes/Projetos/Imagens/imagem-back-end-weather-app.png')` }} />
+                    <CardTitle>Back-end Weather-App</CardTitle>
+                    <CardSubtitle>JAVA, SPRING BOOT, MYSQL</CardSubtitle>
+                    <CardContent>Projeto de Back-end do desafio final da Formação Academia que o objetivo foi criar um Crud, acrônimo de Create, Read, Update e Delete sobre a previsão do tempo</CardContent>
+                    <a href="https://github.com/pedrorosinha/back-end-weather-app" target="_blank" rel="noopener noreferrer">
                     <Button>Acessar</Button>
+                    </a>
                 </Card>
             </Cards>
         </ProjetosContainer>
