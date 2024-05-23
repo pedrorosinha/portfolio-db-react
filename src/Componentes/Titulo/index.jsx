@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import fotoPedroFelipe from "/src/assets/foto-felipe.svg";
+import fotoPedroFelipe from "/src/assets/foto-felipe.jpg";
 
 const Main = styled.div`
   display: flex;
