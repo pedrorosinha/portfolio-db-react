@@ -75,7 +75,7 @@ const Titulo = () => {
             <SideSection>
                 <NameSubtitle>Olá, meu nome é</NameSubtitle>
                 <Title>Pedro Felipe</Title>
-                <JobSubtitle>Sou desenvolvedor da formação da academia na equipe Ar da DB Server</JobSubtitle>
+                <JobSubtitle>Sou desenvolvedor full-stack da formação da academia da DB Server</JobSubtitle>
                 <SectionTitle>Sobre mim</SectionTitle>
                 <Description>Olá, meu nome é Pedro Felipe, tenho 18 anos, sou cadeirante e tenho paralisia cerebral. Moro em Porto Alegre/RS e estou no 1º semestre de Ciências da Computação na Unisinos, em Porto Alegre. Entrei na DB em fevereiro de 2024 como estagiário. Após três semanas estando com o pessoal do Starters Ar, fui para nova equipe, a formação da academia onde eu estou até hoje.</Description>
             </SideSection>
