@@ -67,7 +67,7 @@ const skills = [
   { name: 'JAVA SCRIPT', level: 3 },
   { name: 'REACT', level: 4 },
   { name: 'JAVA', level: 4 },
-  { name: 'SPRNG BOOT', level: 4 },
+  { name: 'SPRING BOOT', level: 4 },
   { name: 'SQL', level: 5 },
 ];
 

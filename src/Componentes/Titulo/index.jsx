@@ -64,9 +64,7 @@ const Description = styled.p`
 
 const Image = styled.img`
   width: 500px;
-  height: 292px;
-  top: 157px;
-  left: 757px;
+  height: 500px;
 `;
 
 const Titulo = () => {
