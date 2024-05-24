@@ -80,7 +80,7 @@ const Cabecalho = () => {
             <LogoImage src={logo} />
           </a>
           <NavButton to="/">Sobre</NavButton>
-          <NavButton to="https://drive.google.com/file/d/1zHqzsxs0U3gI8_BqKL5ojjCp8jdlpT3d/view?usp=sharing" target="_blank" rel="noopener noreferrer" download>Curriculo</NavButton>
+          <NavButton to="https://drive.google.com/file/d/1zHqzsxs0U3gI8_BqKL5ojjCp8jdlpT3d/view?usp=sharing" target="_blank" rel="noopener noreferrer">Curriculo</NavButton>
           <NavButton to="/projetos">Projetos</NavButton>
         </NavGroup>
         <IconGroup>
