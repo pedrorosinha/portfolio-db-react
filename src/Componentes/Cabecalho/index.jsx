@@ -5,6 +5,7 @@ import logo from '/src/assets/logo-db.svg';
 import EmailIcon from '/src/assets/Icones/icone-email.svg';
 import GithubIcon from '/src/assets/Icones/icone-github.svg';
 import LinkedinIcon from '/src/assets/Icones/icone-linkedin.svg';
+import curriculoPDF from '/src/assets/Pedro Felipe - Desenvolvedor.pdf'
 
 const Container = styled.div`
   display: flex;
@@ -79,7 +80,7 @@ const Cabecalho = () => {
             <LogoImage src={logo} />
           </a>
           <NavButton to="/">Sobre</NavButton>
-          <NavButton to="/">Currículo</NavButton>
+          <NavButton to="https://drive.google.com/file/d/1zHqzsxs0U3gI8_BqKL5ojjCp8jdlpT3d/view?usp=sharing" target="_blank" rel="noopener noreferrer" download>Curriculo</NavButton>
           <NavButton to="/projetos">Projetos</NavButton>
         </NavGroup>
         <IconGroup>
