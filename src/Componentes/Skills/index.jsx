@@ -5,32 +5,25 @@ const Container = styled.div`
   font-family: Arial, sans-serif;
   padding: 20px;
   width: 300px;
+  margin-top: 45px;
 `;
 
 const Title = styled.h2`
-    position: absolute;
-    width: 191px;
-    height: 44px;
-    left: 757px;
-    top: 494px;
-    margin-top: 10px;
-
-    font-family: 'TTSupermolot-Bold';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 36px;
-    line-height: 44px;
-    display: flex;
-    align-items: center;
-    color: #292929;
+  font-family: 'TTSupermolot-Bold';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 44px;
+  display: flex;
+  align-items: center;
+  color: #292929;
+  margin-bottom: 10px;
 `;
 
 const SkillList = styled.ul`
-    position: absolute;
-    width: 217px;
-    height: 119px;
-    left: 757px;
-    top: 548px;
+  list-style: none;
+  padding: 0;
+  margin: 0;
 `;
 
 const SkillItem = styled.li`
@@ -40,12 +33,12 @@ const SkillItem = styled.li`
 `;
 
 const SkillName = styled.span`
-    width: 100px;
-    font-family: "Roboto Flex", sans-serif;
-    font-size: 16px;
-    font-weight: 300;
-    line-height: 19px;
-    text-align: left;
+  width: 100px;
+  font-family: "Roboto Flex", sans-serif;
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 19px;
+  text-align: left;
 `;
 
 const CirclesContainer = styled.div`
@@ -53,12 +46,12 @@ const CirclesContainer = styled.div`
 `;
 
 const Circle = styled.div`
-    width: 12px;
-    height: 12px;
-    margin-left: 5px;
-    border-radius: 50%;
-    background: ${({ filled }) => (filled ? '#EAB53D' : 'transparent')};
-    border: 2px solid #EAB53D;
+  width: 12px;
+  height: 12px;
+  margin-left: 5px;
+  border-radius: 50%;
+  background: ${({ filled }) => (filled ? '#EAB53D' : 'transparent')};
+  border: 2px solid #EAB53D;
 `;
 
 const skills = [

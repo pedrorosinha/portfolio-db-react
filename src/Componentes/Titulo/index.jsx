@@ -1,5 +1,6 @@
 import styled from "styled-components";
 import fotoPedroFelipe from "/src/assets/foto-felipe.jpg";
+import ListSkills from "../Skills";
 
 const Main = styled.div`
   display: flex;
@@ -50,17 +51,17 @@ const SectionTitle = styled.h3`
   font-weight: 400;
   color: #292929;
   margin-left: 121px;
-  `;
+`;
 
 const Description = styled.p`
-    font-family: "Roboto Flex", sans-serif;
-    font-size: 16px;
-    font-weight: 300;
-    color: #292929;
-    width: 360px;
-    line-height: 18.75px;
-    margin-left: 121px;
-  `;
+  font-family: "Roboto Flex", sans-serif;
+  font-size: 16px;
+  font-weight: 300;
+  color: #292929;
+  width: 360px;
+  line-height: 18.75px;
+  margin-left: 121px;
+`;
 
 const Image = styled.img`
   width: 500px;
@@ -68,20 +69,21 @@ const Image = styled.img`
 `;
 
 const Titulo = () => {
-    return (
-        <Main>
-            <SideSection>
-                <NameSubtitle>Olá, meu nome é</NameSubtitle>
-                <Title>Pedro Felipe</Title>
-                <JobSubtitle>Sou desenvolvedor full-stack da formação da academia da DB Server</JobSubtitle>
-                <SectionTitle>Sobre mim</SectionTitle>
-                <Description>Olá, meu nome é Pedro Felipe, tenho 18 anos, sou cadeirante e tenho paralisia cerebral. Moro em Porto Alegre/RS e estou no 1º semestre de Ciências da Computação na Unisinos, em Porto Alegre. Entrei na DB em fevereiro de 2024 como estagiário. Após três semanas estando com o pessoal do Starters Ar, fui para nova equipe, a formação da academia onde eu estou até hoje.</Description>
-            </SideSection>
-            <MainSection>
-                <Image src={fotoPedroFelipe} />
-            </MainSection>
-        </Main>
-    )
+  return (
+    <Main>
+      <SideSection>
+        <NameSubtitle>Olá, meu nome é</NameSubtitle>
+        <Title>Pedro Felipe</Title>
+        <JobSubtitle>Sou desenvolvedor full-stack da formação da academia da DB Server</JobSubtitle>
+        <SectionTitle>Sobre mim</SectionTitle>
+        <Description>Olá, meu nome é Pedro Felipe, tenho 18 anos, sou cadeirante e tenho paralisia cerebral. Moro em Porto Alegre/RS e estou no 1º semestre de Ciências da Computação na Unisinos, em Porto Alegre. Entrei na DB em fevereiro de 2024 como estagiário. Após três semanas estando com o pessoal do Starters Ar, fui para nova equipe, a formação da academia onde eu estou até hoje.</Description>
+      </SideSection>
+      <MainSection>
+        <Image src={fotoPedroFelipe} />
+        <ListSkills />
+      </MainSection>
+    </Main>
+  );
 }
 
 export default Titulo;
