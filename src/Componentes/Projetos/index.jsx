@@ -7,6 +7,7 @@ import backEndWeatherAppImg from '../Projetos/Imagens/imagem-back-end-weather-ap
 import crudPessoaEnderecoImg from '../Projetos/Imagens/imagem-crud-pessoa-endereco.png';
 import apresentacaoSpringBootImg from '../Projetos/Imagens/imagem-capa-apresentacao-spring-boot.png';
 import apresentacaoReactImg from '../Projetos/Imagens/imagem-capa-apresentacao-react.png';
+import breakpoints from '../../Styles/Breakpoint/breakpoint';
 
 const ProjetosContainer = styled.div`
   max-width: 1440px;
@@ -16,11 +17,15 @@ const ProjetosContainer = styled.div`
 
 const Cards = styled.div`
   display: flex;
+  flex-direction: row;
   flex-wrap: wrap;
-  gap: 86px;
-  justify-content: flex-start;
+  gap: 20px;
+  justify-content: center;
   margin-top: 30px;
-  margin-left: 124px;
+
+  @media ${breakpoints.bg} {
+    margin-left: 0;
+  }
 `;
 
 const Card = styled.div`
@@ -32,6 +37,11 @@ const Card = styled.div`
   padding: 16px;
   margin-bottom: 20px;
   box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+
+  @media ${breakpoints.bg} {
+    flex: 0 1 100%;
+    min-width: 280px;
+  }
 `;
 
 const CardImage = styled.div`
