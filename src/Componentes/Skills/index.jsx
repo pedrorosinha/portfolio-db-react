@@ -1,10 +1,20 @@
 import React from 'react';
 import styled from 'styled-components';
+import breakpoints from "../../Styles/Breakpoint/breakpoint.jsx";
 
 const Container = styled.div`
-  padding: 20px;
+  padding: 0 100px;
   width: 300px;
   margin-top: 45px;
+  margin-right: 116px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  @media ${breakpoints.bg} {
+    width: 100%;
+    padding: 0 20px;
+  }
 `;
 
 const Title = styled.h2`
@@ -17,18 +27,27 @@ const Title = styled.h2`
   align-items: center;
   color: #292929;
   margin-bottom: 10px;
+  text-align: center;
 `;
 
 const SkillList = styled.ul`
-  list-style: none;
+  list-style: circle;
   padding: 0;
   margin: 0;
+  width: 100%;
 `;
 
 const SkillItem = styled.li`
   display: flex;
   align-items: center;
   margin-bottom: 10px;
+  justify-content: center;
+
+  @media ${breakpoints.bg} {
+    flex-direction: row;
+    align-items: center;
+    gap: 20px;
+  }
 `;
 
 const SkillName = styled.span`
@@ -38,10 +57,19 @@ const SkillName = styled.span`
   font-weight: 300;
   line-height: 19px;
   text-align: left;
+
+  @media ${breakpoints.bg} {
+    text-align: center;
+  }
 `;
 
 const CirclesContainer = styled.div`
   display: flex;
+
+  @media ${breakpoints.bg} {
+    justify-content: center;
+    margin-bottom: 23px;
+  }
 `;
 
 const Circle = styled.div`
@@ -51,6 +79,10 @@ const Circle = styled.div`
   border-radius: 50%;
   background: ${({ filled }) => (filled ? '#EAB53D' : 'transparent')};
   border: 2px solid #EAB53D;
+
+  @media ${breakpoints.bg} {
+    margin-left: 2px;
+  }
 `;
 
 const skills = [

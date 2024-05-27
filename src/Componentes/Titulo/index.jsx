@@ -19,6 +19,10 @@ const SideSection = styled.div`
   display: flex;
   flex: 1;
   flex-direction: column;
+  @media ${breakpoints.bg} {
+    justify-content: center;
+    align-items: center;
+  }
 `;
 
 const MainSection = styled.div`
@@ -28,8 +32,8 @@ const MainSection = styled.div`
   position: relative;
 
   @media ${breakpoints.bg} {
+    justify-content: center;
     align-items: center;
-    right: 0;
   }
 `;
 
@@ -61,11 +65,12 @@ const NameSubtitle = styled.h2`
 
 const JobSubtitle = styled.h2`
   font-family: 'TTSupermolot-Regular';
+  display: flex;
   font-size: 36px;
   font-weight: 400;
   color: #292929;
   margin-left: 120px;
-
+  
   @media ${breakpoints.bg} {
     margin-left: 0;
     text-align: center;
