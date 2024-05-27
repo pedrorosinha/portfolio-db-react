@@ -2,7 +2,6 @@ import React from 'react';
 import styled from 'styled-components';
 
 const Container = styled.div`
-  font-family: Arial, sans-serif;
   padding: 20px;
   width: 300px;
   margin-top: 45px;
