@@ -16,6 +16,7 @@ const EstiloGlobal = createGlobalStyle`
     body, html {
         margin: 0;
         padding: 0;
+        overflow-x: hidden;
     }
 `
 

@@ -1,11 +1,18 @@
 import styled from "styled-components";
 import fotoPedroFelipe from "/src/assets/foto-felipe.jpg";
-import ListSkills from "../Skills";
+import ListSkills from '../Skills';
+import breakpoints from "../../Styles/Breakpoint/breakpoint.jsx";
 
 const Main = styled.div`
   display: flex;
   flex-direction: row;
   margin-top: 50px;
+
+  @media ${breakpoints.bg} {
+    flex-direction: column;
+    align-items: center;
+    padding: 0 20px;
+  }
 `;
 
 const SideSection = styled.div`
@@ -16,9 +23,14 @@ const SideSection = styled.div`
 
 const MainSection = styled.div`
   display: flex;
-  flex: 2;
   flex-direction: column;
-  align-items: center;
+  align-items: flex-end;
+  position: relative;
+
+  @media ${breakpoints.bg} {
+    align-items: center;
+    right: 0;
+  }
 `;
 
 const Title = styled.h1`
@@ -27,6 +39,11 @@ const Title = styled.h1`
   font-weight: 700;
   color: #292929;
   margin-left: 124px;
+
+  @media ${breakpoints.bg} {
+    margin-left: 0;
+    text-align: center;
+  }
 `;
 
 const NameSubtitle = styled.h2`
@@ -35,6 +52,11 @@ const NameSubtitle = styled.h2`
   font-weight: 400;
   color: #292929;
   margin-left: 124px;
+
+  @media ${breakpoints.bg} {
+    margin-left: 0;
+    text-align: center;
+  }
 `;
 
 const JobSubtitle = styled.h2`
@@ -43,6 +65,11 @@ const JobSubtitle = styled.h2`
   font-weight: 400;
   color: #292929;
   margin-left: 120px;
+
+  @media ${breakpoints.bg} {
+    margin-left: 0;
+    text-align: center;
+  }
 `;
 
 const SectionTitle = styled.h3`
@@ -51,6 +78,11 @@ const SectionTitle = styled.h3`
   font-weight: 400;
   color: #292929;
   margin-left: 121px;
+
+  @media ${breakpoints.bg} {
+    margin-left: 0;
+    text-align: center;
+  }
 `;
 
 const Description = styled.p`
@@ -61,11 +93,23 @@ const Description = styled.p`
   width: 360px;
   line-height: 18.75px;
   margin-left: 121px;
+
+  @media ${breakpoints.bg} {
+    margin-left: 0;
+    text-align: center;
+  }
 `;
 
 const Image = styled.img`
   width: 500px;
   height: 500px;
+  margin-left: 116px;
+  margin-right: 116px;
+
+  @media ${breakpoints.bg} {
+    width: 100%;
+    height: auto;
+  }
 `;
 
 const Titulo = () => {
