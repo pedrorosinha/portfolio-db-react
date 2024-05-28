@@ -73,7 +73,6 @@ const JobSubtitle = styled.h2`
   font-weight: 400;
   color: #292929;
   margin-left: 120px;
-  margin-top: 67px;
   
   @media ${breakpoints.bg} {
     margin-left: 0;
@@ -87,6 +86,7 @@ const SectionTitle = styled.h3`
   font-weight: 400;
   color: #292929;
   margin-left: 121px;
+  margin-top: 58px;
 
   @media ${breakpoints.bg} {
     margin-left: 0;
