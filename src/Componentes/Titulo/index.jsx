@@ -58,6 +58,7 @@ const NameSubtitle = styled.h2`
   font-weight: 400;
   color: #292929;
   margin-left: 124px;
+  margin-top: 8px;
 
   @media ${breakpoints.bg} {
     margin-left: 0;
@@ -72,6 +73,7 @@ const JobSubtitle = styled.h2`
   font-weight: 400;
   color: #292929;
   margin-left: 120px;
+  margin-top: 67px;
   
   @media ${breakpoints.bg} {
     margin-left: 0;

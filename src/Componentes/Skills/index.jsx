@@ -26,7 +26,7 @@ const Title = styled.h2`
   display: flex;
   align-items: center;
   color: #292929;
-  margin-bottom: 10px;
+  margin-top: 16px;
   text-align: center;
 `;
 
