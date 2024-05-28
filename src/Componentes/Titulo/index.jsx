@@ -7,6 +7,8 @@ const Main = styled.div`
   display: flex;
   flex-direction: row;
   margin-top: 50px;
+  max-width: 1200px;
+  margin: 0 auto;
 
   @media ${breakpoints.bg} {
     flex-direction: column;
@@ -93,10 +95,11 @@ const SectionTitle = styled.h3`
 const Description = styled.p`
   font-family: "Roboto Flex", sans-serif;
   font-size: 16px;
+  letter-spacing: 1.6px;
   font-weight: 300;
   color: #292929;
   width: 360px;
-  line-height: 18.75px;
+  line-height: 19px;
   margin-left: 121px;
 
   @media ${breakpoints.bg} {
@@ -110,6 +113,7 @@ const Image = styled.img`
   height: 500px;
   margin-left: 116px;
   margin-right: 116px;
+  padding-top: 15px;
 
   @media ${breakpoints.bg} {
     width: 100%;
@@ -123,7 +127,7 @@ const Titulo = () => {
       <SideSection>
         <NameSubtitle>Olá, meu nome é</NameSubtitle>
         <Title>Pedro Felipe</Title>
-        <JobSubtitle>Sou desenvolvedor full-stack da formação da academia da DB Server</JobSubtitle>
+        <JobSubtitle>Sou desenvolvedor full-stack</JobSubtitle>
         <SectionTitle>Sobre mim</SectionTitle>
         <Description>Olá, meu nome é Pedro Felipe, tenho 18 anos, sou cadeirante e tenho paralisia cerebral. Moro em Porto Alegre/RS e estou no 1º semestre de Ciências da Computação na Unisinos, em Porto Alegre. Entrei na DB em fevereiro de 2024 como estagiário. Após três semanas estando com o pessoal do Starters Ar, fui para nova equipe, a formação da academia onde eu estou até hoje.</Description>
       </SideSection>
