@@ -7,6 +7,7 @@ import backEndWeatherAppImg from '../Projetos/Imagens/imagem-back-end-weather-ap
 import crudPessoaEnderecoImg from '../Projetos/Imagens/imagem-crud-pessoa-endereco.png';
 import apresentacaoSpringBootImg from '../Projetos/Imagens/imagem-capa-apresentacao-spring-boot.png';
 import apresentacaoReactImg from '../Projetos/Imagens/imagem-capa-apresentacao-react.png';
+import powerBiViewImg from '../Projetos/Imagens/imagem-powerbi.png'
 import breakpoints from '../../Styles/Breakpoint/breakpoint';
 
 const ProjetosContainer = styled.div`
@@ -168,6 +169,17 @@ const Projetos = () => {
                             <Button>Acessar</Button>
                         </a>
                     </ButtonContainer>
+                </Card>
+                <Card>
+                  <CardImage style={{backgroundImage: `url(${powerBiViewImg})`}} />
+                  <CardTitle>Dashboard Previsão do Tempo Powe BI</CardTitle>
+                  <CardSubtitle>POWER BI, MY SQL</CardSubtitle>
+                  <CardContent>Dashboard feito no Power BI sobre Previsão do Tempo</CardContent>
+                  <ButtonContainer>
+                    <a href="https://app.powerbi.com/view?r=eyJrIjoiOGNlMWYyNDQtM2U4YS00YmZjLTk1YjMtNzYwNWM4MDIxNjQ5IiwidCI6IjI1ZjQ5OWQ5LTlhOWQtNDI4OS1iYTQ0LWU3ZDFjNTM1OGI2MSJ9" target="_blank" rel="noopener noreferrer">
+                      <Button>Acessar</Button>
+                    </a>
+                  </ButtonContainer>
                 </Card>
             </Cards>
         </ProjetosContainer>
