@@ -7,7 +7,8 @@ import backEndWeatherAppImg from '../Projetos/Imagens/imagem-back-end-weather-ap
 import crudPessoaEnderecoImg from '../Projetos/Imagens/imagem-crud-pessoa-endereco.png';
 import apresentacaoSpringBootImg from '../Projetos/Imagens/imagem-capa-apresentacao-spring-boot.png';
 import apresentacaoReactImg from '../Projetos/Imagens/imagem-capa-apresentacao-react.png';
-import powerBiViewImg from '../Projetos/Imagens/imagem-powerbi.png'
+import powerBiViewImg from '../Projetos/Imagens/imagem-powerbi.png';
+import crudNodeJS from '../Projetos/Imagens/crud-nodejs.png'
 import breakpoints from '../../Styles/Breakpoint/breakpoint';
 
 const ProjetosContainer = styled.div`
@@ -177,6 +178,17 @@ const Projetos = () => {
                   <CardContent>Dashboard feito no Power BI sobre Previsão do Tempo</CardContent>
                   <ButtonContainer>
                     <a href="https://app.powerbi.com/view?r=eyJrIjoiOGNlMWYyNDQtM2U4YS00YmZjLTk1YjMtNzYwNWM4MDIxNjQ5IiwidCI6IjI1ZjQ5OWQ5LTlhOWQtNDI4OS1iYTQ0LWU3ZDFjNTM1OGI2MSJ9" target="_blank" rel="noopener noreferrer">
+                      <Button>Acessar</Button>
+                    </a>
+                  </ButtonContainer>
+                </Card>
+                <Card>
+                  <CardImage style={{backgroundImage: `url(${crudNodeJS})`}}/>
+                  <CardTitle>Crud Livraria Node.JS</CardTitle>
+                  <CardSubtitle>Node.JS, MONGODB, SWAGGER</CardSubtitle>
+                  <CardContent>Crud sobre livraria</CardContent>
+                  <ButtonContainer>
+                    <a href="https://github.com/pedrorosinha/crud-biblioteca-node" target="_blank" rel="noopener noreferrer">
                       <Button>Acessar</Button>
                     </a>
                   </ButtonContainer>
