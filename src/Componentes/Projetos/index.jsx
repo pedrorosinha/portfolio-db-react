@@ -8,7 +8,8 @@ import crudPessoaEnderecoImg from '../Projetos/Imagens/imagem-crud-pessoa-endere
 import apresentacaoSpringBootImg from '../Projetos/Imagens/imagem-capa-apresentacao-spring-boot.png';
 import apresentacaoReactImg from '../Projetos/Imagens/imagem-capa-apresentacao-react.png';
 import powerBiViewImg from '../Projetos/Imagens/imagem-powerbi.png';
-import crudNodeJS from '../Projetos/Imagens/crud-nodejs.png'
+import crudNodeJS from '../Projetos/Imagens/crud-nodejs.png';
+import desafioRPA from '../Projetos/Imagens/imagem-rpa.png';
 import breakpoints from '../../Styles/Breakpoint/breakpoint';
 
 const ProjetosContainer = styled.div`
@@ -173,7 +174,7 @@ const Projetos = () => {
                 </Card>
                 <Card>
                   <CardImage style={{backgroundImage: `url(${powerBiViewImg})`}} />
-                  <CardTitle>Dashboard Previsão do Tempo Powe BI</CardTitle>
+                  <CardTitle>Dashboard Previsão do Tempo Power BI</CardTitle>
                   <CardSubtitle>POWER BI, MY SQL</CardSubtitle>
                   <CardContent>Dashboard feito no Power BI sobre Previsão do Tempo</CardContent>
                   <ButtonContainer>
@@ -189,6 +190,17 @@ const Projetos = () => {
                   <CardContent>Crud sobre livraria</CardContent>
                   <ButtonContainer>
                     <a href="https://github.com/pedrorosinha/crud-biblioteca-node" target="_blank" rel="noopener noreferrer">
+                      <Button>Acessar</Button>
+                    </a>
+                  </ButtonContainer>
+                </Card>
+                <Card>
+                  <CardImage style={{backgroundImage: `url(${desafioRPA})`}}></CardImage>
+                  <CardTitle>Desafio de RPA</CardTitle>
+                  <CardSubtitle>UIPATH, ORCHESTATOR, ASSISTANT</CardSubtitle>
+                  <CardContent>Desafio de RPA feito no Uipath Studio</CardContent>
+                  <ButtonContainer>
+                    <a href="https://github.com/pedrorosinha/desafio-rpa-db" target="_blank" rel="noopener noreferrer">
                       <Button>Acessar</Button>
                     </a>
                   </ButtonContainer>
