@@ -212,8 +212,9 @@ const Projetos = () => {
                   <CardSubtitle>JAVA, SPRING BOOT, SPRING SECURITY</CardSubtitle>
                   <CardContent>Projeto CRUD Java deprodutos e clientes focando na parte de spring security</CardContent>
                   <ButtonContainer>
-                    <a href="https://github.com/pedrorosinha/crud-spring-security" target="_blank" rel="noopener noreferrer"></a>
-                    <Button>Acessar</Button>
+                    <a href="https://github.com/pedrorosinha/crud-spring-security" target="_blank" rel="noopener noreferrer">
+                      <Button>Acessar</Button>
+                    </a>
                   </ButtonContainer>
                 </Card>
             </Cards>
