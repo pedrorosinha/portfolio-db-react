@@ -10,6 +10,7 @@ import apresentacaoReactImg from '../Projetos/Imagens/imagem-capa-apresentacao-r
 import powerBiViewImg from '../Projetos/Imagens/imagem-powerbi.png';
 import crudNodeJS from '../Projetos/Imagens/crud-nodejs.png';
 import desafioRPA from '../Projetos/Imagens/imagem-rpa.png';
+import springSecurity from '../Projetos/Imagens/spring-security.png';
 import breakpoints from '../../Styles/Breakpoint/breakpoint';
 
 const ProjetosContainer = styled.div`
@@ -203,6 +204,16 @@ const Projetos = () => {
                     <a href="https://github.com/pedrorosinha/desafio-rpa-db" target="_blank" rel="noopener noreferrer">
                       <Button>Acessar</Button>
                     </a>
+                  </ButtonContainer>
+                </Card>
+                <Card>
+                  <CardImage style={{backgroundImage: `url(${springSecurity})`}}></CardImage>
+                  <CardTitle>Projeto Spring Security</CardTitle>
+                  <CardSubtitle>JAVA, SPRING BOOT, SPRING SECURITY</CardSubtitle>
+                  <CardContent>Projeto CRUD Java deprodutos e clientes focando na parte de spring security</CardContent>
+                  <ButtonContainer>
+                    <a href="https://github.com/pedrorosinha/crud-spring-security" target="_blank" rel="noopener noreferrer"></a>
+                    <Button>Acessar</Button>
                   </ButtonContainer>
                 </Card>
             </Cards>
