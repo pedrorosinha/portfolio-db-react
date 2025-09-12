@@ -90,9 +90,11 @@ const skills = [
   { name: 'CSS', level: 5 },
   { name: 'JAVA SCRIPT', level: 3 },
   { name: 'REACT', level: 4 },
-  { name: 'JAVA', level: 4 },
-  { name: 'SPRING BOOT', level: 4 },
+  { name: 'JAVA', level: 5 },
+  { name: 'SPRING BOOT', level: 5 },
   { name: 'SQL', level: 5 },
+  { name: 'PHP', level: 5 },
+  { name: 'KOTLIN', level: 2 },
 ];
 
 const ListSkills = () => {

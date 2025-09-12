@@ -11,6 +11,7 @@ import powerBiViewImg from '../Projetos/Imagens/imagem-powerbi.png';
 import crudNodeJS from '../Projetos/Imagens/crud-nodejs.png';
 import desafioRPA from '../Projetos/Imagens/imagem-rpa.png';
 import springSecurity from '../Projetos/Imagens/spring-security.png';
+import kotlin from '../Projetos/Imagens/kotlin-alu-games.png';
 import breakpoints from '../../Styles/Breakpoint/breakpoint';
 
 const ProjetosContainer = styled.div`
@@ -102,124 +103,135 @@ const Button = styled.button`
 `;
 
 const Projetos = () => {
-    return (
-        <ProjetosContainer>
-            <h1>Meus Projetos</h1>
-            <h2>Projetos</h2>
-            <Cards>
-                <Card>
-                    <CardImage style={{ backgroundImage: `url(${calculadoraImg})` }} />
-                    <CardTitle>Calculadora</CardTitle>
-                    <CardSubtitle>REACT, CSS, JAVASCRIPT</CardSubtitle>
-                    <CardContent>Um projeto de React com JavaScript realizado durante a minha apresentação sobre o React.</CardContent>
-                    <ButtonContainer>
-                        <a href="https://calculadora-react-nine-dusky.vercel.app/" target="_blank" rel="noopener noreferrer">
-                            <Button>Acessar</Button>
-                        </a>
-                    </ButtonContainer>
-                </Card>
-                <Card>
-                    <CardImage style={{ backgroundImage: `url(${weatherAppImg})` }} />
-                    <CardTitle>Front-end Weather App</CardTitle>
-                    <CardSubtitle>REACT, CSS, JAVASCRIPT</CardSubtitle>
-                    <CardContent>Projeto de Front-end do desafio final da Formação Academia que o objetivo foi criar a tela para o cadastro da Previsão do Tempo.</CardContent>
-                    <ButtonContainer>
-                        <a href="https://front-end-weather-app.vercel.app/" target="_blank" rel="noopener noreferrer">
-                            <Button>Acessar</Button>
-                        </a>
-                    </ButtonContainer>
-                </Card>
-                <Card>
-                    <CardImage style={{ backgroundImage: `url(${backEndWeatherAppImg})` }} />
-                    <CardTitle>Back-end Weather-App</CardTitle>
-                    <CardSubtitle>JAVA, SPRING BOOT, MYSQL</CardSubtitle>
-                    <CardContent>Projeto de Back-end do desafio final da Formação Academia que o objetivo foi criar um Crud, acrônimo de Create, Read, Update e Delete sobre a previsão do tempo</CardContent>
-                    <ButtonContainer>
-                        <a href="https://github.com/pedrorosinha/back-end-weather-app" target="_blank" rel="noopener noreferrer">
-                            <Button>Acessar</Button>
-                        </a>
-                    </ButtonContainer>
-                </Card>
-                <Card>
-                    <CardImage style={{ backgroundImage: `url(${crudPessoaEnderecoImg})` }} />
-                    <CardTitle>CRUD Pessoa e Endereço</CardTitle>
-                    <CardSubtitle>JAVA, SPRING BOOT, MYSQL</CardSubtitle>
-                    <CardContent>Primeiro projeto de Back-end na DB que o objetivo foi criar um Crud, acrônimo de Create, Read, Update e Delete relacionando a pessoa com o endereço.</CardContent>
-                    <ButtonContainer>
-                        <a href="https://github.com/pedrorosinha/crud-java-spring-boot-pessoa-endereco" target="_blank" rel="noopener noreferrer">
-                            <Button>Acessar</Button>
-                        </a>
-                    </ButtonContainer>
-                </Card>
-                <Card>
-                    <CardImage style={{ backgroundImage: `url(${apresentacaoSpringBootImg})` }} />
-                    <CardTitle>Apresentação sobre o Spring Boot</CardTitle>
-                    <CardSubtitle>JAVA, SPRING BOOT, MYSQL</CardSubtitle>
-                    <CardContent>Apresentação sobre o Spring Boot mostrando o que é, como instalar/configurar e mostrando um exemplo de um projeto</CardContent>
-                    <ButtonContainer>
-                        <a href="https://drive.google.com/file/d/1QaCHQSTOOrbeUoHFznKKRRM56zGB1xf9/view?usp=sharing" target="_blank" rel="noopener noreferrer">
-                            <Button>Acessar</Button>
-                        </a>
-                    </ButtonContainer>
-                </Card>
-                <Card>
-                    <CardImage style={{ backgroundImage: `url(${apresentacaoReactImg})` }} />
-                    <CardTitle>Apresentação sobre o React</CardTitle>
-                    <CardSubtitle>REACT, CSS, JAVASCRIPT</CardSubtitle>
-                    <CardContent>Apresentação sobre o React mostrando o que é, como instalar/configurar e fazendo um exemplo de um projeto de uma calculadora</CardContent>
-                    <ButtonContainer>
-                        <a href="https://drive.google.com/file/d/1MWIX_3nVOFQjZnDqX1cJl40g39PM0LmV/view?usp=sharing" target="_blank" rel="noopener noreferrer">
-                            <Button>Acessar</Button>
-                        </a>
-                    </ButtonContainer>
-                </Card>
-                <Card>
-                  <CardImage style={{backgroundImage: `url(${powerBiViewImg})`}} />
-                  <CardTitle>Dashboard Previsão do Tempo Power BI</CardTitle>
-                  <CardSubtitle>POWER BI, MY SQL</CardSubtitle>
-                  <CardContent>Dashboard feito no Power BI sobre Previsão do Tempo</CardContent>
-                  <ButtonContainer>
-                    <a href="https://app.powerbi.com/view?r=eyJrIjoiOGNlMWYyNDQtM2U4YS00YmZjLTk1YjMtNzYwNWM4MDIxNjQ5IiwidCI6IjI1ZjQ5OWQ5LTlhOWQtNDI4OS1iYTQ0LWU3ZDFjNTM1OGI2MSJ9" target="_blank" rel="noopener noreferrer">
-                      <Button>Acessar</Button>
-                    </a>
-                  </ButtonContainer>
-                </Card>
-                <Card>
-                  <CardImage style={{backgroundImage: `url(${crudNodeJS})`}}/>
-                  <CardTitle>Crud Livraria Node.JS</CardTitle>
-                  <CardSubtitle>Node.JS, MONGODB, SWAGGER</CardSubtitle>
-                  <CardContent>Crud sobre livraria</CardContent>
-                  <ButtonContainer>
-                    <a href="https://github.com/pedrorosinha/crud-biblioteca-node" target="_blank" rel="noopener noreferrer">
-                      <Button>Acessar</Button>
-                    </a>
-                  </ButtonContainer>
-                </Card>
-                <Card>
-                  <CardImage style={{backgroundImage: `url(${desafioRPA})`}}></CardImage>
-                  <CardTitle>Desafio de RPA</CardTitle>
-                  <CardSubtitle>UIPATH, ORCHESTATOR, ASSISTANT</CardSubtitle>
-                  <CardContent>Desafio de RPA feito no Uipath Studio</CardContent>
-                  <ButtonContainer>
-                    <a href="https://github.com/pedrorosinha/desafio-rpa-db" target="_blank" rel="noopener noreferrer">
-                      <Button>Acessar</Button>
-                    </a>
-                  </ButtonContainer>
-                </Card>
-                <Card>
-                  <CardImage style={{backgroundImage: `url(${springSecurity})`}}></CardImage>
-                  <CardTitle>Projeto Spring Security</CardTitle>
-                  <CardSubtitle>JAVA, SPRING BOOT, SPRING SECURITY</CardSubtitle>
-                  <CardContent>Projeto CRUD Java deprodutos e clientes focando na parte de spring security</CardContent>
-                  <ButtonContainer>
-                    <a href="https://github.com/pedrorosinha/crud-spring-security" target="_blank" rel="noopener noreferrer">
-                      <Button>Acessar</Button>
-                    </a>
-                  </ButtonContainer>
-                </Card>
-            </Cards>
-        </ProjetosContainer>
-    );
+  return (
+    <ProjetosContainer>
+      <h1>Meus Projetos</h1>
+      <h2>Projetos</h2>
+      <Cards>
+        <Card>
+          <CardImage style={{ backgroundImage: `url(${calculadoraImg})` }} />
+          <CardTitle>Calculadora</CardTitle>
+          <CardSubtitle>REACT, CSS, JAVASCRIPT</CardSubtitle>
+          <CardContent>Um projeto de React com JavaScript realizado durante a minha apresentação sobre o React.</CardContent>
+          <ButtonContainer>
+            <a href="https://calculadora-react-nine-dusky.vercel.app/" target="_blank" rel="noopener noreferrer">
+              <Button>Acessar</Button>
+            </a>
+          </ButtonContainer>
+        </Card>
+        <Card>
+          <CardImage style={{ backgroundImage: `url(${weatherAppImg})` }} />
+          <CardTitle>Front-end Weather App</CardTitle>
+          <CardSubtitle>REACT, CSS, JAVASCRIPT</CardSubtitle>
+          <CardContent>Projeto de Front-end do desafio final da Formação Academia que o objetivo foi criar a tela para o cadastro da Previsão do Tempo.</CardContent>
+          <ButtonContainer>
+            <a href="https://front-end-weather-app.vercel.app/" target="_blank" rel="noopener noreferrer">
+              <Button>Acessar</Button>
+            </a>
+          </ButtonContainer>
+        </Card>
+        <Card>
+          <CardImage style={{ backgroundImage: `url(${backEndWeatherAppImg})` }} />
+          <CardTitle>Back-end Weather-App</CardTitle>
+          <CardSubtitle>JAVA, SPRING BOOT, MYSQL</CardSubtitle>
+          <CardContent>Projeto de Back-end do desafio final da Formação Academia que o objetivo foi criar um Crud, acrônimo de Create, Read, Update e Delete sobre a previsão do tempo</CardContent>
+          <ButtonContainer>
+            <a href="https://github.com/pedrorosinha/back-end-weather-app" target="_blank" rel="noopener noreferrer">
+              <Button>Acessar</Button>
+            </a>
+          </ButtonContainer>
+        </Card>
+        <Card>
+          <CardImage style={{ backgroundImage: `url(${crudPessoaEnderecoImg})` }} />
+          <CardTitle>CRUD Pessoa e Endereço</CardTitle>
+          <CardSubtitle>JAVA, SPRING BOOT, MYSQL</CardSubtitle>
+          <CardContent>Primeiro projeto de Back-end na DB que o objetivo foi criar um Crud, acrônimo de Create, Read, Update e Delete relacionando a pessoa com o endereço.</CardContent>
+          <ButtonContainer>
+            <a href="https://github.com/pedrorosinha/crud-java-spring-boot-pessoa-endereco" target="_blank" rel="noopener noreferrer">
+              <Button>Acessar</Button>
+            </a>
+          </ButtonContainer>
+        </Card>
+        <Card>
+          <CardImage style={{ backgroundImage: `url(${apresentacaoSpringBootImg})` }} />
+          <CardTitle>Apresentação sobre o Spring Boot</CardTitle>
+          <CardSubtitle>JAVA, SPRING BOOT, MYSQL</CardSubtitle>
+          <CardContent>Apresentação sobre o Spring Boot mostrando o que é, como instalar/configurar e mostrando um exemplo de um projeto</CardContent>
+          <ButtonContainer>
+            <a href="https://drive.google.com/file/d/1QaCHQSTOOrbeUoHFznKKRRM56zGB1xf9/view?usp=sharing" target="_blank" rel="noopener noreferrer">
+              <Button>Acessar</Button>
+            </a>
+          </ButtonContainer>
+        </Card>
+        <Card>
+          <CardImage style={{ backgroundImage: `url(${apresentacaoReactImg})` }} />
+          <CardTitle>Apresentação sobre o React</CardTitle>
+          <CardSubtitle>REACT, CSS, JAVASCRIPT</CardSubtitle>
+          <CardContent>Apresentação sobre o React mostrando o que é, como instalar/configurar e fazendo um exemplo de um projeto de uma calculadora</CardContent>
+          <ButtonContainer>
+            <a href="https://drive.google.com/file/d/1MWIX_3nVOFQjZnDqX1cJl40g39PM0LmV/view?usp=sharing" target="_blank" rel="noopener noreferrer">
+              <Button>Acessar</Button>
+            </a>
+          </ButtonContainer>
+        </Card>
+        <Card>
+          <CardImage style={{ backgroundImage: `url(${powerBiViewImg})` }} />
+          <CardTitle>Dashboard Previsão do Tempo Power BI</CardTitle>
+          <CardSubtitle>POWER BI, MY SQL</CardSubtitle>
+          <CardContent>Dashboard feito no Power BI sobre Previsão do Tempo</CardContent>
+          <ButtonContainer>
+            <a href="https://app.powerbi.com/view?r=eyJrIjoiOGNlMWYyNDQtM2U4YS00YmZjLTk1YjMtNzYwNWM4MDIxNjQ5IiwidCI6IjI1ZjQ5OWQ5LTlhOWQtNDI4OS1iYTQ0LWU3ZDFjNTM1OGI2MSJ9" target="_blank" rel="noopener noreferrer">
+              <Button>Acessar</Button>
+            </a>
+          </ButtonContainer>
+        </Card>
+        <Card>
+          <CardImage style={{ backgroundImage: `url(${crudNodeJS})` }} />
+          <CardTitle>Crud Livraria Node.JS</CardTitle>
+          <CardSubtitle>Node.JS, MONGODB, SWAGGER</CardSubtitle>
+          <CardContent>Crud sobre livraria</CardContent>
+          <ButtonContainer>
+            <a href="https://github.com/pedrorosinha/crud-biblioteca-node" target="_blank" rel="noopener noreferrer">
+              <Button>Acessar</Button>
+            </a>
+          </ButtonContainer>
+        </Card>
+        <Card>
+          <CardImage style={{ backgroundImage: `url(${desafioRPA})` }}></CardImage>
+          <CardTitle>Desafio de RPA</CardTitle>
+          <CardSubtitle>UIPATH, ORCHESTATOR, ASSISTANT</CardSubtitle>
+          <CardContent>Desafio de RPA feito no Uipath Studio</CardContent>
+          <ButtonContainer>
+            <a href="https://github.com/pedrorosinha/desafio-rpa-db" target="_blank" rel="noopener noreferrer">
+              <Button>Acessar</Button>
+            </a>
+          </ButtonContainer>
+        </Card>
+        <Card>
+          <CardImage style={{ backgroundImage: `url(${kotlin})` }}></CardImage>
+          <CardTitle>Curso Kotlin</CardTitle>
+          <CardSubtitle>KOTLIN</CardSubtitle>
+          <CardContent>Projeto realizado em Kotlin com o curso na Alura</CardContent>
+          <ButtonContainer>
+            <a href="https://github.com/pedrorosinha/AluGames" target="_blank" rel="noopener noreferrer">
+              <Button>Acessar</Button>
+            </a>
+          </ButtonContainer>
+        </Card>
+        <Card>
+          <CardImage style={{ backgroundImage: `url(${springSecurity})` }}></CardImage>
+          <CardTitle>Projeto Spring Security</CardTitle>
+          <CardSubtitle>JAVA, SPRING BOOT, SPRING SECURITY</CardSubtitle>
+          <CardContent>Projeto CRUD Java deprodutos e clientes focando na parte de spring security</CardContent>
+          <ButtonContainer>
+            <a href="https://github.com/pedrorosinha/crud-spring-security" target="_blank" rel="noopener noreferrer">
+              <Button>Acessar</Button>
+            </a>
+          </ButtonContainer>
+        </Card>
+      </Cards>
+    </ProjetosContainer>
+  );
 }
 
 export default Projetos;

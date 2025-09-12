@@ -106,10 +106,11 @@ const Description = styled.p`
   width: 360px;
   line-height: 19px;
   margin-left: 121px;
+  text-align: justify;
 
   @media ${breakpoints.bg} {
     margin-left: 0;
-    text-align: center;
+    text-align: justify;
   }
 `;
 
@@ -134,7 +135,7 @@ const Titulo = () => {
         <Title>Pedro Felipe</Title>
         <JobSubtitle>Sou desenvolvedor full-stack</JobSubtitle>
         <SectionTitle>Sobre mim</SectionTitle>
-        <Description>Olá, meu nome é Pedro Felipe, tenho 18 anos, sou cadeirante e tenho paralisia cerebral. Moro em Porto Alegre/RS e estou no 1º semestre de Ciências da Computação na Unisinos, em Porto Alegre. Entrei na DB em fevereiro de 2024 como estagiário. Após três semanas estando com o pessoal do Starters Ar, fui para nova equipe, a formação da academia onde eu estou até hoje.</Description>
+        <Description>Olá, meu nome é Pedro Felipe, tenho 19 anos, sou cadeirante e tenho paralisia cerebral. Moro em Porto Alegre/RS e estou no 4º semestre de Ciências da Computação na Unisinos, em Porto Alegre. Entrei na DB em fevereiro de 2024 como estagiário. Após três semanas estando com o pessoal do Starters Ar, fui para nova equipe, a formação da academia. Em setembro de 2024 entrei no meu primeiro projeto com um cliente (Sicredi) no projeto Prospera com linguagem PHP</Description>
       </SideSection>
       <MainSection>
         <Image src={fotoPedroFelipe} />
